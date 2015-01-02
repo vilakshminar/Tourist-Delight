@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+    <assembly>
+        <name>Bing.Translator</name>
+    </assembly>
+    <members>
+        <member name="T:Bing.Translator.GetLanguagesResult">
+            <summary>
+            The list of Language Code / Names and Result Code
+            </summary>
+        </member>
+        <member name="P:Bing.Translator.GetLanguagesResult.Languages">
+            <summary>
+            the list of language code or names
+            </summary>
+        </member>
+        <member name="P:Bing.Translator.GetLanguagesResult.Code">
+            <summary>
+            Result Code
+            </summary>
+        </member>
+        <member name="T:Bing.Translator.TranslationResult">
+            <summary>
+            A string representing the translated text and the Result Code. 
+            </summary>
+        </member>
+        <member name="P:Bing.Translator.TranslationResult.TextTranslated">
+            <summary>
+            A string representing the translated text. If you previously use AddTranslation or AddTranslationArray (through our Public API http://msdn.microsoft.com/en-us/library/dd576287.aspx) enter a translation with a rating of 5 or higher for the same source sentence, Translate returns only the top choice that is available to your system. The "same source sentence" means the exact same (100% matching), except for capitalization, white space, tag values, and punctuation at the end of a sentence. If no rating is stored with a rating of 5 or above then the returned result will be the automatic translation by Microsoft Translator. 
+            </summary>
+        </member>
+        <member name="P:Bing.Translator.TranslationResult.Code">
+            <summary>
+            Result Code
+            </summary>
+        </member>
+        <member name="T:Bing.Translator.ErrorCode">
+            <summary>
+            Result Code
+            </summary>
+        </member>
+        <member name="F:Bing.Translator.ErrorCode.OK">
+            <summary>
+            OK
+            </summary>
+        </member>
+        <member name="F:Bing.Translator.ErrorCode.Input_InvalidCategory">
+            <summary>
+            Category is invalid. Leave it blank or input a valid category.
+            </summary>
+        </member>
+        <member name="F:Bing.Translator.ErrorCode.Input_InvalidLanguage">
+            <summary>
+            Language is not supported. Use a supported language code.
+            </summary>
+        </member>
+        <member name="F:Bing.Translator.ErrorCode.Input_InvalidAuthentication">
+            <summary>
+            ClientId or ClientSecret is invalid.
+            </summary>
+        </member>
+        <member name="F:Bing.Translator.ErrorCode.Input_ExpiredToken">
+            <summary>
+            Your Azure Subscription token is expired. Check your subscription for more detail.
+            </summary>
+        </member>
+        <member name="F:Bing.Translator.ErrorCode.Input_SentenceTooLong">
+            <summary>
+            Input sentence is too long. Use a shorter sentence.
+            </summary>
+        </member>
+        <member name="F:Bing.Translator.ErrorCode.Internal_ServiceDisabled">
+            <summary>
+            Internal Error: Service is disabled.
+            </summary>
+        </member>
+        <member name="F:Bing.Translator.ErrorCode.Internal_ServiceTemporarilyUnavailable">
+            <summary>
+            Internal Error: Service is temporarily unavailable.
+            </summary>
+        </member>
+        <member name="F:Bing.Translator.ErrorCode.Internal_NoTranslationFound">
+            <summary>
+            Internal Error: No Translation Found.
+            </summary>
+        </member>
+        <member name="F:Bing.Translator.ErrorCode.Input_IpOverQuota">
+            <summary>
+            Your IP address is over the throttling quota for using the Translator service. Try again later.
+            </summary>
+        </member>
+        <member name="F:Bing.Translator.ErrorCode.Input_AppIdOverQuota">
+            <summary>
+            The appId from your Azure subscription is over the throttling quota for using the Translator service. Try again later.
+            </summary>
+        </member>
+        <member name="F:Bing.Translator.ErrorCode.Input_IpBlackList">
+            <summary>
+            Your IP address has been blacklisted from the Translator service. Contact support for more details.
+            </summary>
+        </member>
+        <member name="F:Bing.Translator.ErrorCode.Input_AppIdBlackList">
+            <summary>
+            The appId from your Azure subscription has been blacklisted. Contact support for more details.
+            </summary>
+        </member>
+        <member name="F:Bing.Translator.ErrorCode.Input_OAuthInvalidSignature">
+            <summary>
+            Your Azure Subscription contains an invalid signature. Check your subscription for more details.
+            </summary>
+        </member>
+        <member name="F:Bing.Translator.ErrorCode.Input_OAuthInvalidBearer">
+            <summary>
+            Your Azure Subscription is invalid. Check your clientId and clientSecret.
+            </summary>
+        </member>
+        <member name="F:Bing.Translator.ErrorCode.Input_ADMInvalidSubscriptionState">
+            <summary>
+            Your Azure Subscription is in an invalid state. Check your subscription for more detail.
+            </summary>
+        </member>
+        <member name="F:Bing.Translator.ErrorCode.Input_ADMZeroBalance">
+            <summary>
+            Your Azure Subscription has zero balance. Check your subscription for more detail.
+            </summary>
+        </member>
+        <member name="F:Bing.Translator.ErrorCode.Input_ADMSubscriptionNotFound">
+            <summary>
+            Your Azure Subscription is not found. Check your subscription for more detail.
+            </summary>
+        </member>
+        <member name="F:Bing.Translator.ErrorCode.Input_InvalidFromLanguage">
+            <summary>
+            From Language is invalid. Use a valid language code.
+            </summary>
+        </member>
+        <member name="F:Bing.Translator.ErrorCode.Input_InvalidToLanguage">
+            <summary>
+            To Language is invalid. Use a valid language code.
+            </summary>
+        </member>
+        <member name="T:Bing.Translator.Errors">
+            <summary>
+            this is taken from the MDistributer Error.cs
+            </summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_ARRAY_ELEMENT_CANNOT_BE_EMPTY">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_AUTHORITY_ALREADY_EXISTS">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_AUTHORITY_IS_NULL">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_AUTHORITY_INVALID_RATING">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_AUTHORITY_INVALID_STATUS">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_AUTHORITY_INVALID_USER">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_AUTHORITY_PARAM">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_AUTHORITY_USER_NOT_FOUND">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_AUTHORITY_EXCEEDED_ALLOWED_USERS">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_USER_PARAM">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_INVALID_CATEGORY">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_INVALID_CATEGORY_PARAM">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_INVALID_FROM_LANGUAGE">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_INVALID_FROM_LANGUAGE_PARAM">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_INVALID_TO_LANGUAGE">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_INVALID_TO_LANGUAGE_PARAM">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_TOO_MANY_ELEMENTS">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_TOO_MANY_ELEMENTS_PARAM">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_UNSUPPORTED_FROM_LANGUAGE">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_UNSUPPORTED_FROM_LANGUAGE_PARAM">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_UNSUPPORTED_TO_LANGUAGE">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_UNSUPPORTED_TO_LANGUAGE_PARAM">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_UNSUPPORTED_LANGUAGE">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_UNSUPPORTED_LANGUAGE_PARAM">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_INVALID_APPID">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_INVALID_APPID_PARAM">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_INVALID_SPEAK_FORMAT">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_FORMAT_PARAM">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_INVALID_OPERATION">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_NO_CACHE_ENTRY_FOUND">
+            <summary>When option cacheonly is used and translation was not found in cache we return this error message</summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_NULL_TEXT">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_NULL_TEXT_PARAM">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_TOO_MUCH_DATA">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_TOO_MUCH_DATA_PARAM">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_INVALID_HTML_FORMAT">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_INVALID_LOCALE">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_INVALID_LOCALE_PARAM">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_TOO_MANY_TEXTS">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_TOO_MANY_TEXTS_PARAM">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_HTML_TREE_TO_DEEP">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_SERVER_TOO_BUSY">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_PROCESSING_REQUEST">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_SERVER_TEMPORARILY_UNAVAILABLE">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_UNSUPPORTED_FORMAT">
+            <summary></summary>
+        </member>
+        <member name="F:Bing.Translator.Errors.ERROR_UNSUPPORTED_FORMAT_PARAM">
+            <summary></summary>
+        </member>
+        <member name="T:Bing.Translator.TranslatorControl">
+            <summary>
+             To use the control in the xaml     
+             &lt;TranslatorControl ClientId="client"  ClientSecret="secret"/&gt;     
+             &lt;TextBox Text="{Binding TextToTranslate, ElementName=Translator, Mode=TwoWay}"/&gt;     // Mode=TwoWay is needed to send data to the control (instead of just reading from it).  
+             &lt;TextBox Text="{Binding TextTranslated, ElementName=Translator}" /&gt;                 
+             &lt;TextBox Text="{Binding ErrorCode, ElementName=Translator}" /&gt;                  
+            </summary>    
+        </member>
+        <member name="M:Bing.Translator.TranslatorControl.#ctor">
+            <summary>
+            Constructor for Control
+            </summary>
+        </member>
+        <member name="M:Bing.Translator.TranslatorControl.FireCompletedEvent(Bing.Translator.TranslationResult)">
+            <summary>
+            Fire all the delegates that is attached to the events with the arg
+            </summary>
+            <param name="arg">Contains TextTranslated and ErrorCode</param>
+        </member>
+        <member name="M:Bing.Translator.TranslatorControl.OnClientIdOrSecretChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Since ClientId or ClientSecret Changed, we atomically signal the service helper
+            It will create a new one next time it is needed.
+            Reason we don't initialize right away is that we want to wait till both are changed first
+            </summary>
+            <param name="d"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Bing.Translator.TranslatorControl.OnTextChanged(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Each time LanguageFrom, LanguageTo, Category or TextToTranslate is changed
+            We check whether we can perform a translation
+            </summary>
+            <param name="d"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Bing.Translator.TranslatorControl.StartTranslation(Bing.Translator.TranslatorControl)">
+            <summary>
+            Start the translation, if not all parameters are present then no op.
+            </summary>
+            <param name="control"></param>
+        </member>
+        <member name="E:Bing.Translator.TranslatorControl.Completed">
+            <summary>
+            Event is signaled when translation is completed
+            </summary>
+        </member>
+        <member name="P:Bing.Translator.TranslatorControl.TranslatorApi">
+            <summary>
+            Translator Library contains methods to communicate with the Bing Translator API
+            </summary>
+        </member>
+        <member name="P:Bing.Translator.TranslatorControl.ClientId">
+            <summary>
+            ClientId for ADM Authentication.
+            Can be set in Xaml  &lt;TranslatorControl ClientId="client"  ClientSecret="secret" LanguageFrom="en" LanguageTo="es"/&gt;
+            </summary>
+        </member>
+        <member name="P:Bing.Translator.TranslatorControl.ClientSecret">
+            <summary>
+            ClientId for ADM Authentication.
+            Can be set in Xaml  &lt;TranslatorControl ClientId="client"  ClientSecret="secret" LanguageFrom="en" LanguageTo="es"/&gt;
+            </summary>
+        </member>
+        <member name="P:Bing.Translator.TranslatorControl.LanguageFrom">
+            <summary>
+            Optional. A string representing the language code of the translation text. If left empty the response will include the result of language auto-detection. 
+            Can be set in Xaml  &lt;TranslatorControl ClientId="client"  ClientSecret="secret" LanguageFrom="en" LanguageTo="es"/&gt;   
+            </summary>
+        </member>
+        <member name="P:Bing.Translator.TranslatorControl.LanguageTo">
+            <summary>
+            Required. A string representing the language code to translate the text into. 
+            Can be set in Xaml  &lt;TranslatorControl ClientId="client"  ClientSecret="secret" LanguageFrom="en" LanguageTo="es"/&gt;  
+            </summary>
+        </member>
+        <member name="P:Bing.Translator.TranslatorControl.Category">
+            <summary>
+            Optional. A string containing the category (domain) of the translation. Defaults to "general".
+            Can be set in Xaml  &lt;TranslatorControl ClientId="client"  ClientSecret="secret" LanguageFrom="en" LanguageTo="es" Category="general"/&gt;  
+            </summary>
+        </member>
+        <member name="P:Bing.Translator.TranslatorControl.TextToTranslate">
+            <summary>
+            Required. A string representing the text to translate. The size of the text must not exceed 10000 characters. 
+            In Xaml, example of binding to textbox &lt;TextBox Text="{Binding TextToTranslate, ElementName=Translator, Mode=TwoWay}" /&gt;  
+            Mode=TwoWay is needed to send data to the control (instead of just reading from it).  
+            </summary>
+        </member>
+        <member name="P:Bing.Translator.TranslatorControl.TextTranslated">
+            <summary>
+            A string representing the translated text. 
+            In Xaml, example of binding to textbox  &lt;TextBox Text="{Binding TextToTranslate, ElementName=Translator}" /&gt; 
+            </summary>
+        </member>
+        <member name="P:Bing.Translator.TranslatorControl.ErrorCode">
+            <summary>
+            Result Code
+            </summary>
+        </member>
+        <member name="T:Bing.Translator.TranslatorLibrary">
+            <summary>
+            Translator Library contains methods to communicate with the Bing Translator API
+            </summary>
+        </member>
+        <member name="M:Bing.Translator.TranslatorLibrary.#ctor(System.String,System.String)">
+            <summary>
+            Constructor for the Translator API Library
+            </summary>
+            <param name="clientId">Client Id for ADM Authentication</param>
+            <param name="clientSecret">Client Secret for ADM Authentication</param>
+        </member>
+        <member name="M:Bing.Translator.TranslatorLibrary.TranslateAsync(System.String,System.String,System.String,System.String)">
+            <summary>
+            Translates a text string from one language to another. 
+            </summary>
+            <param name="languageFrom">Optional. A string representing the language code of the translation text. If left empty the response will include the result of language auto-detection. </param>
+            <param name="languageTo">Required. A string representing the language code to translate the text into. </param>
+            <param name="category">Optional. A string containing the category (domain) of the translation. Defaults to "general".</param>
+            <param name="textToTranslate">Required. A string representing the text to translate. The size of the text must not exceed 10000 characters. </param>
+            <returns>A string representing the translated text and the Result Code. If you previously use AddTranslation or AddTranslationArray (through our Public API http://msdn.microsoft.com/en-us/library/dd576287.aspx) enter a translation with a rating of 5 or higher for the same source sentence, Translate returns only the top choice that is available to your system. The "same source sentence" means the exact same (100% matching), except for capitalization, white space, tag values, and punctuation at the end of a sentence. If no rating is stored with a rating of 5 or above then the returned result will be the automatic translation by Microsoft Translator. </returns>
+        </member>
+        <member name="M:Bing.Translator.TranslatorLibrary.GetLanguagesAsync">
+            <summary>
+            Obtain a list of language codes representing languages that are supported by the Translation Service. TranslateAsync() can translate between any of these languages. 
+            </summary>
+            <returns>A string array containing the language codes supported by the Translator Services and the Result Code</returns>
+        </member>
+        <member name="M:Bing.Translator.TranslatorLibrary.GetLanguageNamesAsync(System.String,Windows.Foundation.Collections.IIterable{System.String})">
+            <summary>
+            Retrieves friendly names for the languages passed in languageCodes, and localized the passed locale language. 
+            </summary>
+            <param name="locale">Required. A string representing a combination of an ISO 639 two-letter lowercase culture code associated with a language and an ISO 3166 two-letter uppercase subculture code to localize the language names or a ISO 639 lowercase culture code by itself. </param>
+            <param name="languageCodes">Required. A string array representing the ISO 639-1 language codes to retrieve the friendly name for. </param>
+            <returns>A string array containing languages names supported by the Translator Service, localized into the requested language and result code.</returns>
+        </member>
+        <member name="M:Bing.Translator.TranslatorLibrary.ReturnUnauthorizedResult``1">
+            <summary>
+            helper method to return the unathorized result code
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="P:Bing.Translator.TranslatorLibrary.ClientId">
+            <summary>
+            ReadOnly Client Id for ADM Authentication
+            </summary>
+        </member>
+        <member name="P:Bing.Translator.TranslatorLibrary.ClientSecret">
+            <summary>
+            ReadOnly Client Secret for ADM Authentication
+            </summary>
+        </member>
+    </members>
+</doc>

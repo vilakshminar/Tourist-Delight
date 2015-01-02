@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>RAMS</Machine>
+    <WindowsUser>Guruprasad</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>da003cd9-6eb7-403b-85a7-eddc189a1b73</PackageIdentityName>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Guruprasad\Desktop\C#\OcrImageTranslatorCS\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Guruprasad\Desktop\C#\OcrImageTranslatorCS\bin\Debug\OcrImageTranslatorCS.exe">
+      <PackagePath>OcrImageTranslatorCS.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Guruprasad\AppData\Local\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Bing.Ocr\1.1.1.0\References\commonconfiguration\neutral\Bing.Controls.AuthenticationAccessToken.winmd">
+      <PackagePath>Bing.Controls.AuthenticationAccessToken.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Guruprasad\AppData\Local\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Bing.Ocr\1.1.1.0\References\commonconfiguration\neutral\Bing.Ocr.winmd">
+      <PackagePath>Bing.Ocr.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Guruprasad\AppData\Local\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Bing.Translator\1.1\References\commonconfiguration\neutral\Bing.Translator.winmd">
+      <PackagePath>Bing.Translator.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Guruprasad\AppData\Local\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Bing.Ocr\1.1.1.0\Redist\commonconfiguration\neutral\Bing.Ocr\Themes\Generic.xaml">
+      <PackagePath>Bing.Ocr\Themes\Generic.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Guruprasad\AppData\Local\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Bing.Translator\1.1\Redist\commonconfiguration\neutral\Bing.Translator\Themes\Generic.xaml">
+      <PackagePath>Bing.Translator\Themes\Generic.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Guruprasad\Desktop\C#\OcrImageTranslatorCS\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Guruprasad\Desktop\C#\OcrImageTranslatorCS\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Guruprasad\Desktop\C#\OcrImageTranslatorCS\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Guruprasad\Desktop\C#\OcrImageTranslatorCS\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Guruprasad\Desktop\C#\OcrImageTranslatorCS\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Guruprasad\Desktop\C#\OcrImageTranslatorCS\bin\Debug\BlankPage1.xbf">
+      <PackagePath>BlankPage1.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Guruprasad\Desktop\C#\OcrImageTranslatorCS\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Guruprasad\Desktop\C#\OcrImageTranslatorCS\bin\Debug\Bing.Ocr\Themes\Generic.xbf">
+      <PackagePath>Bing.Ocr\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Guruprasad\Desktop\C#\OcrImageTranslatorCS\bin\Debug\Bing.Translator\Themes\Generic.xbf">
+      <PackagePath>Bing.Translator\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Guruprasad\Desktop\C#\OcrImageTranslatorCS\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

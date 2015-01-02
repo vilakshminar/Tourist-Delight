@@ -1,0 +1,75 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Bing.Ocr">
+
+    <Style TargetType="local:OcrControl">
+        <Setter Property="BorderBrush" Value="{StaticResource ButtonBorderThemeBrush}" />
+        <Setter Property="BorderThickness" Value="{StaticResource ButtonBorderThemeThickness}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:OcrControl">
+                    <Border
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+                        <Border.Resources>
+                            <Style x:Key="SwitchCameraButtonStyle" TargetType="Button">
+                                <Setter Property="HorizontalAlignment" Value="Left"/>
+                                <Setter Property="VerticalAlignment" Value="Bottom"/>
+                                <Setter Property="FontFamily" Value="{StaticResource SymbolThemeFontFamily}"/>
+                            </Style>
+                        </Border.Resources>
+
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="WorkflowStates">
+                                <VisualState x:Name="Capturing">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="InstructionsContainer">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="CaptureElement">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Recognizing">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="CapturedImage">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="ProgressRing">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="Visible" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="IsActive" Storyboard.TargetName="ProgressRing">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="True" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Default"/>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="0.375*" />
+                                <RowDefinition Height="0.25*" />
+                                <RowDefinition Height="0.375*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.375*" />
+                                <ColumnDefinition Width="0.25*" />
+                                <ColumnDefinition Width="0.375*" />
+                            </Grid.ColumnDefinitions>
+
+                            <CaptureElement x:Name="CaptureElement" Visibility="Collapsed" Grid.RowSpan="3" Grid.ColumnSpan="3"/>
+                            <Border x:Name="InstructionsContainer" Visibility="Collapsed" Child="{TemplateBinding InstructionOverlay}"  Grid.RowSpan="3" Grid.ColumnSpan="3"/>
+                            <Image x:Name="CapturedImage" Stretch="Uniform" Visibility="Collapsed" Opacity="0.5" Grid.RowSpan="3" Grid.ColumnSpan="3"/>
+                            <ProgressRing x:Name="ProgressRing" Visibility="Collapsed" Foreground="White" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

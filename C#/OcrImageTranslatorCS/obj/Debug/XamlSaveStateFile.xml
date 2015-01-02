@@ -1,0 +1,9 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\users\guruprasad\desktop\c#\ocrimagetranslatorcs\obj\debug\intermediatexaml\ocrimagetranslatorcs.exe" HashGuid="7b22a37d-f48d-c290-3a8d-2a30e6dc9fb3" />
+    <ReferenceAssembly PathName="c:\users\sanjay subramanian\appdata\local\microsoft sdks\windows\v8.1\extensionsdks\bing.ocr\1.1.1.0\references\commonconfiguration\neutral\bing.controls.authenticationaccesstoken.winmd" HashGuid="b050873d-50d2-af24-94cd-ad1e4aa5042b" />
+    <ReferenceAssembly PathName="c:\users\sanjay subramanian\appdata\local\microsoft sdks\windows\v8.1\extensionsdks\bing.ocr\1.1.1.0\references\commonconfiguration\neutral\bing.ocr.winmd" HashGuid="7fbcda0c-d98f-8dce-dcf2-b791fcfe8c33" />
+    <ReferenceAssembly PathName="c:\users\sanjay subramanian\appdata\local\microsoft sdks\windows\v8.1\extensionsdks\bing.translator\1.1\references\commonconfiguration\neutral\bing.translator.winmd" HashGuid="519c91c2-3893-d268-fbdc-efcff27b368c" />
+    <ReferenceAssembly PathName="c:\users\sanjay subramanian\desktop\tourist delight\c#\packages\callisto.1.4.0\lib\netcore451\callisto.dll" HashGuid="2e1ab8d4-b948-5a13-39d6-e24ac2a3055f" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head><link rel="stylesheet" type="text/css" href="description/Combined.css,0:ImageSprite,0:Header.NonMtps,1:LinkList;/Areas/Centers/Themes/Msdn/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=EB87627F1FAC8F417DDC560F58ECEDC8" xmlns="http://www.w3.org/1999/xhtml" />
+<link rel="stylesheet" type="text/css" href="description/2062f018-0b99-40d7-9c66-897063b698ebCombined.css,0:ImageSprite,0:Footer.NonMtps,1:LinkList;/Areas/Centers/Themes/Msdn/Content:0,/Areas/Epx/Themes/Base/Content:1&amp;amp;hashKey=59AF12CEA39A0C1AEAA6487FF1817969" xmlns="http://www.w3.org/1999/xhtml" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>OCR Image Translator</title>
+        <link href="description/Galleries.css" type="text/css" rel="Stylesheet" /><link href="description/Layout.css" type="text/css" rel="Stylesheet" /><link href="description/Brand.css" type="text/css" rel="Stylesheet" />
+        <link href="description/iframedescription.css" rel="Stylesheet" type="text/css" />
+        <script src="description/offline.js" type="text/javascript"></script>
+        <style type="text/css">
+            #projectInfo {
+                overflow: auto;
+            }
+            #longDesc {
+                clear:both;
+                margin: 25px 0 10px 0;
+            }
+
+            #SampleIndexList{
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+<body>
+    <div id="offlineDescription">
+        <h1>OCR Image Translator</h1>
+        <br/>
+        <div id="projectInfo">
+            <div class="section">
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Technologies">Technologies</label>
+                        <div id="Technologies">
+                            Bing Translator, Bing OCR
+                        </div>
+                    </div>
+                    <div class="itemBarLong tagsContainer">
+                        <label for="Topics">Topics</label>
+                        <div id="Topics">
+                            Bing OCR Control, Bing Translator Control
+                        </div>
+                    </div>
+                <div class="itemBarLong">
+                    <label for="Platforms">Platforms</label>
+                    <div id="Platforms">
+                        Windows RT
+                    </div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="Requirements">Requirements</label>
+                    <div id="Requirements">
+                        
+                    </div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Primary language</label>
+                    <div id="LastUpdated">en-US</div>
+                </div>
+                <div class="itemBar">
+                    <label for="LastUpdated">Updated</label>
+                    <div id="LastUpdated">11/7/2013</div>
+                </div>
+                <div class="itemBarLong">
+                    <label for="License">License</label>
+                    <div id="License">
+                        <a href="license.rtf">MS-LPL</a></div>
+                </div>
+                <div class="itemBar">
+                    <div class="viewonlinecont">
+                        <a data-link="online" href="http://code.msdn.microsoft.com/OCR-Image-Translator-053c6dd7">View this sample online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                   
+<script type="text/javascript">
+    function initializePage() {
+        var otherTabClass = 'otherTab';
+        var hiddenPreClass = 'hidden';
+
+        var htmlDecode = function(encodedData) {
+            var decodedData = "";
+            if (encodedData) {
+                var div = document.createElement('div');
+                div.innerHTML = encodedData;
+                decodedData = div.firstChild.nodeValue.replace( /\\r\\n/ig , '\r\n');
+            }
+            return decodedData;
+        };
+                
+        Galleries.iterateElem(Galleries.findElem(null, 'div', 'scriptcode'), function (index, scriptBlock) {
+            var titleElem = Galleries.findElem(scriptBlock, 'div', 'title')[0];
+            var labelElems = Galleries.findElem(titleElem, 'span');
+            if (labelElems.length == 0) {
+                labelElems = titleElem;
+            }
+            var languageSpans = Galleries.findElem(scriptBlock, 'span', 'hidden');
+            var pres = Galleries.findElem(scriptBlock, 'pre');
+            if (languageSpans.length > 0 && pres.length > 1) {
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    var languageSpan = languageSpans[index];
+                            
+                    elem.code = codePre.innerHTML.replace( /(\r(\n)?)|((\r)?\n)/ig , '\\r\\n');
+                            
+                    codePre.className = codePre.className.replace(hiddenPreClass, '');
+                            
+                    languageSpan.parentNode.removeChild(languageSpan);
+                });
+
+                pres = Galleries.findElem(scriptBlock, 'pre');
+                Galleries.iterateElem(labelElems, function(index, elem) {
+                    var codePre = pres[index];
+                    var labelSpan = elem;
+                    if (index == 0) {
+                        scriptBlock.activeTab = 0;
+                    }
+                    else {
+                        labelSpan.className += otherTabClass;
+                        codePre.className += hiddenPreClass;
+                    }
+                    Galleries.attachEventHandler(labelSpan, 'click', function(e) {
+                        var activeTab = scriptBlock.activeTab;
+                        labelElems[activeTab].className += otherTabClass;
+                        pres[activeTab].className += hiddenPreClass;
+
+                        codePre.className = codePre.className.replace(hiddenPreClass, '');
+                        labelSpan.className = labelSpan.className.replace(otherTabClass, '');
+                        scriptBlock.activeTab = index;
+                    });
+                });
+
+                var preview = Galleries.findElem(scriptBlock, 'div', 'preview');
+                if (preview.length == 0) {
+                    preview.push(pres[pres.length - 1]);
+                }
+                Galleries.iterateElem(preview, function(index, elem) {
+                    elem.parentNode.removeChild(elem);
+                });
+
+                if (window.clipboardData && clipboardData.setData) {
+                    var copyLink = document.createElement('a');
+                    copyLink.href = 'javascript:void(0);';
+                    copyLink.className = 'copyCode';
+                    copyLink.innerHTML = 'Copy code';
+                    Galleries.attachEventHandler(copyLink, 'click', function (e) {
+                        clipboardData.setData("Text", htmlDecode(labelElems[scriptBlock.activeTab].code));
+                        return false;
+                    });
+                    scriptBlock.insertBefore(copyLink, scriptBlock.childNodes[0]);
+                }
+            }
+        });
+    }
+
+    Galleries.onWindowLoad(function(){
+        initializePage();
+    });
+
+</script>
+<div id="longDesc">
+    
+<h1><img id="85631" src="description/OCR_Hero40.png" alt="" width="392" height="112"><img id="85634" src="description/Translator_Reduced_more.jpg" alt="" width="178" height="107"></h1>
+<h1>Introduction</h1>
+<p>The OCR Image Translator sample combines the Bing OCR Control and the Bing <br>
+Translator Control into a single application that takes a picture of printed <br>
+text, reads the text, and then translates it into a language of the user's <br>
+choice.</p>
+<h1>Building the Sample</h1>
+<p>Before building and running this sample, you must:</p>
+<ol>
+<li>Install the Bing OCR Control and the Bing Translator Control from the Visual <br>
+Studio Gallery </li><li>Register both controls with the Azure Data Marketplace to get your ClientIDs <br>
+and ClientSecrets </li><li>Add a reference to the Bing.Ocr and Bing.Translator&nbsp;namespaces in your <br>
+project </li></ol>
+<p>For more information, see <a href="http://msdn.microsoft.com/en-us/library/dn261730.aspx" >
+How to: Install and Register the Bing OCR Control with the Azure Data <br>
+Marketplace</a>&nbsp;and <a href="http://msdn.microsoft.com/en-us/library/dn261775.aspx" >
+How to: Register the Bing Translator Control with the Azure Data Marketplace</a></p>
+<p><span style="font-size:20px; font-weight:bold">Description</span></p>
+<p>This sample places an OCR Control and a Translator control on a XAML page, <br>
+with two combo boxes to select&nbsp;the languages to translate to and from, two text
+<br>
+blocks to display OCR text and translated text, and a third text block for error <br>
+messages.&nbsp;</p>
+<p>In the code behind, it populates to list of languages to read from those <br>
+supported by the OCR Control, and populates the list of languages to write from <br>
+those supported by thr Translator. It uses the GetLanguageNamesAsync method of <br>
+the Translator Control to append the names of the languages to their language <br>
+codes.</p>
+<p>The OCR control starts from Page Load, and when a user selects an image, the <br>
+image goes to the OCR service for processing. The Completed event for the OCR <br>
+Control then writes the OCR text to one text box, and then launches the <br>
+Translator, which writes the tranlsated text to the other text box.</p>
+<h1>Source Code Files</h1>
+<ul>
+<li>MainPage.xaml - contains the control declarations and layout of the page. </li><li>MainPage.xaml.cs - contains the active code for the project. </li></ul>
+<h1>More Information</h1>
+<p><em>For more information and code samples pertaining to the OCR Control, <br>
+see</em></p>
+<ul>
+<li><a href="http://msdn.microsoft.com/en-us/library/dn261719.aspx" >The Bing Optical Character Recognition (OCR) Control</a>
+</li><li><a href="http://msdn.microsoft.com/en-us/library/dn261753.aspx" >Embedding the Bing OCR Control in an Application</a>
+</li><li><a href="http://msdn.microsoft.com/en-us/library/dn261763.aspx" >How to: Extract text from an OCR result</a>
+</li><li><a href="http://msdn.microsoft.com/en-us/library/dn261758.aspx" >How to: Extract text position data from an OCR result</a>
+</li><li><a href="http://msdn.microsoft.com/en-us/library/dn261747.aspx" >How to: Set the text language for the Bing OCR Control</a>
+</li><li><a href="http://msdn.microsoft.com/en-us/library/dn261735.aspx" >Bing.Ocr Namespace</a>
+</li></ul>
+
+</div>
+
+
+    </div>
+</body>
+</html>

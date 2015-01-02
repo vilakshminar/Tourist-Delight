@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright (c) 2012 Microsoft Corporation.  All rights reserved.
+    Use of this sample source code is subject to the terms of the Microsoft license 
+    agreement under which you licensed this sample source code and is provided AS-IS.
+    If you did not accept the terms of the license agreement, you are not authorized 
+    to use this sample source code.  For the terms of the license, please see the 
+    license agreement between you and Microsoft.-->
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="26971WinWizards.TouristDelight" Publisher="CN=25D4157A-3110-42A7-9370-957ECABDEAAC" Version="1.1.0.2" />
+  <Properties>
+    <DisplayName>Tourist Delight</DisplayName>
+    <PublisherDisplayName>WinWizards</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="OcrImageTranslatorCS.App">
+      <m2:VisualElements DisplayName="Tourist Delight" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="Works with any Windows 8.x device with a built in rear camera. It is a useful app for tourists. The app can be used to take photo of any text which is in the native language of the host country and after selecting the source and destination languages, the app translates the source text to the target text." ForegroundText="dark" BackgroundColor="#FFFFEE" ToastCapable="true">
+        <m2:DefaultTile ShortName="TD">
+          <m2:ShowNameOnTiles>
+            <m2:ShowOn Tile="square150x150Logo" />
+          </m2:ShowNameOnTiles>
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="Assets\SplashScreen.png" />
+        <m2:ApplicationView MinWidth="width320" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <Capability Name="internetClientServer" />
+    <Capability Name="privateNetworkClientServer" />
+    <DeviceCapability Name="webcam" />
+  </Capabilities>
+</Package>

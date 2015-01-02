@@ -1,0 +1,54 @@
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\App.xbf
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\BlankPage1.xbf
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\MainPage.xbf
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\Bing.Ocr\Themes\Generic.xbf
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\Bing.Translator\Themes\Generic.xbf
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\OcrImageTranslatorCS.exe
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\OcrImageTranslatorCS.pdb
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\resources.pri
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\AppxManifest.xml
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\Tourist Delight.build.appxrecipe
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\Bing.Controls.AuthenticationAccessToken.winmd
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\Bing.Ocr.winmd
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\Bing.Ocr.xml
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\Bing.Translator.winmd
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\Bing.Translator.xml
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\App.g.i.cs
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\App.g.cs
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\BlankPage1.g.i.cs
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\BlankPage1.g.cs
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\MainPage.g.i.cs
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\MainPage.g.cs
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\XamlTypeInfo.g.cs
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\App.xaml
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\BlankPage1.xaml
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\MainPage.xaml
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\App.xbf
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\BlankPage1.xbf
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\MainPage.xbf
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\XamlSaveStateFile.xml
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\Bing.Ocr\Themes\Generic.xbf
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\Bing.Translator\Themes\Generic.xbf
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\OcrImageTranslatorCS.exe
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\OcrImageTranslatorCS.pdb
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\priconfig.xml
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\priconfig.xml.intermediate
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\layout.resfiles
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\layout.resfiles.intermediate
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\resources.resfiles
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\resources.resfiles.intermediate
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\pri.resfiles
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\pri.resfiles.intermediate
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\qualifiers.txt
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\qualifiers.txt.intermediate
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\ProjectArchitectures.txt
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\Privacy Policy.xbf
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\Callisto.dll
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\Callisto.pri
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\Privacy Policy.g.i.cs
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\Privacy Policy.g.cs
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\Privacy Policy.xaml
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\Privacy Policy.xbf
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\Tourist Delight.csproj.GenerateResource.Cache
+C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\obj\Release\Callisto.pri.xml

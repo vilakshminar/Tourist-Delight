@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>SANJAY</Machine>
+    <WindowsUser>Sanjay Subramanian</WindowsUser>
+    <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>26971WinWizards.TouristDelight</PackageIdentityName>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\OcrImageTranslatorCS.exe">
+      <PackagePath>OcrImageTranslatorCS.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sanjay Subramanian\AppData\Local\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Bing.Ocr\1.1.1.0\References\commonconfiguration\neutral\Bing.Controls.AuthenticationAccessToken.winmd">
+      <PackagePath>Bing.Controls.AuthenticationAccessToken.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sanjay Subramanian\AppData\Local\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Bing.Ocr\1.1.1.0\References\commonconfiguration\neutral\Bing.Ocr.winmd">
+      <PackagePath>Bing.Ocr.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sanjay Subramanian\AppData\Local\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Bing.Translator\1.1\References\commonconfiguration\neutral\Bing.Translator.winmd">
+      <PackagePath>Bing.Translator.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\packages\Callisto.1.4.0\lib\netcore451\Callisto.dll">
+      <PackagePath>Callisto.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sanjay Subramanian\AppData\Local\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Bing.Ocr\1.1.1.0\Redist\commonconfiguration\neutral\Bing.Ocr\Themes\Generic.xaml">
+      <PackagePath>Bing.Ocr\Themes\Generic.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sanjay Subramanian\AppData\Local\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Bing.Translator\1.1\Redist\commonconfiguration\neutral\Bing.Translator\Themes\Generic.xaml">
+      <PackagePath>Bing.Translator\Themes\Generic.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\Privacy Policy.xbf">
+      <PackagePath>Privacy Policy.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\BlankPage1.xbf">
+      <PackagePath>BlankPage1.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\Bing.Ocr\Themes\Generic.xbf">
+      <PackagePath>Bing.Ocr\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\Bing.Translator\Themes\Generic.xbf">
+      <PackagePath>Bing.Translator\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\packages\Callisto.1.4.0\lib\netcore451\Callisto\themes\Generic.xbf">
+      <PackagePath>Callisto\themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Sanjay Subramanian\Desktop\Tourist Delight\C#\OcrImageTranslatorCS\bin\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

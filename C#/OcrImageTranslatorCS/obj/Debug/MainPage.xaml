@@ -1,0 +1,54 @@
+﻿<!--Copyright (c) 2012 Microsoft Corporation.  All rights reserved.
+    Use of this sample source code is subject to the terms of the Microsoft license 
+    agreement under which you licensed this sample source code and is provided AS-IS.
+    If you did not accept the terms of the license agreement, you are not authorized 
+    to use this sample source code.  For the terms of the license, please see the 
+    license agreement between you and Microsoft.-->
+    
+<Page
+    x:Class="OcrImageTranslatorCS.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OcrImageTranslatorCS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Translator="using:Bing.Translator"
+    xmlns:Ocr="using:Bing.Ocr"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Ocr:OcrControl x:Name="OCR"                                    Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" />
+        <TextBlock      x:Name="OcrResults" TextWrapping="NoWrap"       Grid.Row="0" Grid.Column="1" Margin="10,0,10,10" />
+        <TextBlock      x:Name="TransResults" TextWrapping="NoWrap"     Grid.Row="1" Grid.Column="1" Margin="10,10,10,0" />
+        <TextBlock      x:Name="ErrorBox" Text=""  TextWrapping="Wrap"  Grid.Row="2" Grid.Column="1" Margin="10,20,10,0" />
+        <Grid Grid.Row="2" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Language to Read" FontSize="16"            Grid.Column="0" Height="25" VerticalAlignment="Top" Margin="10,10,10,0" />
+            <ComboBox  x:Name="LanguageIn" DisplayMemberPath="Item2"    Grid.Column="0" Height="50" VerticalAlignment="Top" Margin="10,35,10,0" />
+            <TextBlock Text="Language to Write" FontSize="16"           Grid.Column="1" Height="25" VerticalAlignment="Top" Margin="10,10,10,0" />
+            <ComboBox  x:Name="LanguageOut" DisplayMemberPath="Item2"   Grid.Column="1" Height="50" VerticalAlignment="Top" Margin="10,35,10,0" />
+        </Grid>
+        <Translator:TranslatorControl
+            x:Name="Trans" 
+            LanguageFrom="{Binding ElementName=LanguageIn, Path=SelectedValue}" 
+            TextToTranslate="{Binding ElementName=OcrResults, Path=Text}"  />
+        <!--AppBarButton HorizontalAlignment="Left" Style="{StaticResource NavigationBackButtonNormalStyle}" Margin="41,48,0,0" VerticalAlignment="Top">
+            <AppBarButton.Icon>
+                <SymbolIcon/>
+            </AppBarButton.Icon>
+        </-->
+    </Grid>
+</Page>
+

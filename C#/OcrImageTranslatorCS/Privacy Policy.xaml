@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="OcrImageTranslatorCS.Privacy_Policy"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OcrImageTranslatorCS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <StackPanel Background="White">
+            <TextBlock Text="Privacy Policy" FontFamily="Segoe UI" FontWeight="SemiLight" FontSize="26.667" />
+            <TextBlock Text="The application does not collect any personal data of users and is for the sole purpose of delivering the requested information." FontFamily="Segoe UI" FontWeight="SemiLight" FontSize="18" TextWrapping="Wrap" AllowDrop="True" />
+        </StackPanel>
+    </Grid>
+</Page>
